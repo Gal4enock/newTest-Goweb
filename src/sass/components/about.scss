@@ -1,0 +1,117 @@
+.about {
+  color: $black-text-color;
+  font-weight: 400;
+  margin: 0 auto;
+  &-bcg {
+      background-color: $green-bg;
+      width: 100%;
+  }
+  &-details {
+    margin: 0 auto;
+    width: 320px;
+  @include for-size(tablet) {
+      display: flex;
+      width: 768px;
+      justify-content: center;
+       }
+  
+    @include for-size(desktop) {
+      width: 1360px;
+  }
+}
+  &-list {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 13px;
+    width: 320px;
+    margin: 0 auto;
+    @include for-size(tablet) {
+      width: 768px;
+      display: flex;
+      padding-top: 40px;
+      padding-bottom: 29px;
+      justify-content: space-between;
+      }
+      @include for-size(desktop) {
+      width: 1360px;
+      }
+      &-item {
+        @include for-size(tablet) {
+      width: 194px;
+      }
+      @include for-size(desktop) {
+      width: 362px;
+      }
+      }
+  }
+  &-circle {
+    margin: 0 auto;
+    margin-bottom: 11px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: $green-bg;
+    text-align: center;
+    padding-top: 15px;
+    @include for-size(tablet) {
+      width: 67px;
+      height: 67px;
+      padding-top: 18px;
+      }
+  }
+  &-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.66;
+    @include for-size(tablet) {
+      font-size: 20px;
+      }
+  }
+  &-text {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    @include for-size(tablet) {
+      font-size: 18px;
+      }
+  }
+  &-description {
+    color: $white-text-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    @include for-size(tablet) {
+      width: 384px;
+      height: 564px;
+      }
+    @include for-size(desktop) {
+      width: 680px;
+      height: 460px;
+  }
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.66;
+      margin-bottom: 5px;
+      @include for-size(tablet) {
+      font-size: 20px;
+      }
+    }
+    &-title {
+      font-weight: 300;
+      font-size: 38px;
+      line-height: 1.26;
+      margin-bottom: 25px;
+    }
+    &-full {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      @include for-size(tablet) {
+      font-size: 18px;
+      margin-bottom: 20px;
+      }
+    }
+  }
+}

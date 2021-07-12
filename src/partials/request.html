@@ -1,0 +1,65 @@
+
+<section id="contact" class="request-layout">
+  <div class="request">
+  <picture>
+    <source
+              srcset="
+                ./images/optimise-images/desktop-request.webp   1x,
+                ./images/optimise-images/desktop-request2x.webp 2x
+              "
+              media="(min-width: 1360px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/optimise-images/desktop-request.jpg   1x,
+                ./images/optimise-images/desktop-request2x.jpg 2x
+              "
+              media="(min-width: 1360px)"
+            />
+
+            <source
+              srcset="
+                ./images/optimise-images/tablet-request.webp   1x,
+                ./images/optimise-images/tablet-request2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/optimise-images/tablet-request.jpg   1x,
+                ./images/optimise-images/tablet-request2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/optimise-images/mobile-request.webp   1x,
+                ./images/optimise-images/mobile-request2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/optimise-images/mobile-request.jpg   1x,
+                ./images/optimise-images/mobile-request2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+
+            <img
+              src="./images/optimise-images/mobile-request.jpg"
+              alt="man with laptop"
+              style="width: 100%"
+            />
+  </picture>
+    <form action="submit" data-netlify="true" class="container request-box">
+  <h2 class="request-title">Request Callback</h2>
+  <input class="request-input" name="name" placeholder="Enter your name" type="text" >
+  <input class="request-input required" name="email" placeholder="Enter email*" type="text" >
+  <button class="hero-button request-button" type="submit">Send</button>
+  </form>
+  </div>
+</section>

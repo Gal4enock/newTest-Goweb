@@ -1,0 +1,97 @@
+.request {
+  background-color: $secondary-bg;
+  padding-bottom: 30px;
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    &-box {
+      width: 384px;
+    }
+  }
+  @include for-size(desktop) {
+      &-box {
+      width: 680px;
+    }
+    }
+    &-box {
+      position: relative;
+    }
+  &-layout {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    @include for-size(tablet) {
+      width: 768px;
+    }
+    @include for-size(desktop) {
+      width: 1360px;
+    }
+  }
+  &-title {
+    margin-top: 26px;
+    margin-bottom: 34px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  &-input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    width: 260px;
+    height: 40px;
+    background-color: $white-text-color;
+    border: none;
+     @include for-size(desktop) {
+      width: 620px;
+      margin: 0;
+      margin-bottom: 36px;
+    }
+    
+  }
+  &-button {
+    width: 260px;
+    @include for-size(desktop) {
+      margin-top: 60px;
+    }
+  }
+}
+ .warning-icon {
+    color: red;
+  }
+  .warning-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/svg/worning.svg');
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    bottom: 75px;
+    right:20px;
+      @include for-size(tablet) {
+      bottom: 114px;
+      right:51px;
+      }
+      @include for-size(desktop) {
+      bottom: 229px;
+      right:51px;
+      }
+  }
+
+  .warning-icon::before {
+    content: 'This is a required field';
+    display: block;
+    position: absolute;
+    width: 235px;
+    bottom: 62px;
+    right:51px;
+      @include for-size(tablet) {
+      bottom: 110px;
+      right:51px;
+      }
+       @include for-size(desktop) {
+      bottom: 217px;
+      right: 190px;
+      }
+  }

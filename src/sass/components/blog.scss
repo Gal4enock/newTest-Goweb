@@ -1,0 +1,83 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+@import "../utils/common";
+
+.blog {
+  background-color: $blue-bg;
+  color: $white-text-color;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 100%;
+  &-details {
+      width: 320px;
+      margin: 0 auto;
+    }
+  @include for-size(tablet) {
+    display: block;
+    padding-bottom: 0;
+    &-details {
+      width: 384px;
+      margin: 0;
+    }
+    &-box {
+      margin: 0 auto;
+      width: 320px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        @include for-size(tablet) {
+          width: 768px;
+        }
+        @include for-size(desktop) {
+          width: 1360px;
+        }
+      }
+  }
+  @include for-size(desktop) {
+    &-details {
+      width: 680px;
+    }
+  }
+  &-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 30px;
+    @include for-size(tablet) {
+      font-size: 20px;
+    }
+  }
+  &-title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 25px;
+    padding-left: 30px;
+  }
+  &-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include for-size(tablet) {
+      font-size: 18px;
+    }
+  }
+  &-button {
+    background-color: $blue-bg;
+    border:1px solid $white-text-color;
+    @include for-size(desktop) {
+    margin-left: 30px;
+    }
+    &:hover,
+    &:focus {
+      color: $blue-bg;
+      background-color: $white-text-color;
+      opacity: 1;
+    }
+  }
+}

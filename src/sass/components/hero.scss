@@ -1,0 +1,84 @@
+.bcg {
+    width: 100%;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/mobile-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+      screen and (min-resolution: 96dpi) and (min-width: 320px),
+      screen and (min-resolution: 1dppx) and (min-width: 320px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/mobile-hero2x.jpg');
+    }
+
+    @include for-size(tablet) {
+      height: 1024px;
+      padding-top: 407px;
+      background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/tablet-hero.jpg');
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 96dpi) and (min-width: 768px),
+        screen and (min-resolution: 1dppx) and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/tablet-hero2x.jpg');
+      }
+    }
+    @include for-size(desktop) {
+      height: 768px;
+      padding-top: 279px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/desktop-hero.jpg');
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 96dpi) and (min-width: 768px),
+        screen and (min-resolution: 1dppx) and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/desktop-hero2x.jpg');
+      }
+    }
+}
+.hero {
+  padding-top: 144px;
+  padding-bottom: 95px;
+  &-title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: $gray-text-color;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.62;
+    @include for-size(tablet) {
+      font-size: 55px;
+      }
+  }
+  &-text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+    color: $gray-text-color;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.67;
+  }
+  &-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    margin-top: 27px;
+    width: 156px;
+    height: 45px;
+    background-color: $green-bg;
+    color: $white-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 5px;
+    fill: $white-text-color;
+    @include for-size(tablet) {
+      width: 165px;
+      height: 48px;
+      }
+    &:hover,
+    &:focus {
+      // background-color: $white-text-color;
+      // color: $green-text-color;
+      // fill: $green-text-color;
+      opacity: 0.5;
+    }
+  }
+}

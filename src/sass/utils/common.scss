@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  background-color: $primary-bg;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* стиль ссылок*/
+a {
+  color: $white-text-color;
+  text-decoration: none;
+  transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    color: $gray-text-color;
+  }
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 19px;
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1360px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+.button {
+  border: 1px solid $white-text-color;
+  margin:0;
+  &:focus,
+ &:hover {
+   background-color: $white-text-color;
+    color: $green-text-color;
+    fill: $green-text-color;
+    opacity: 1;
+ }
+}

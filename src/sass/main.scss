@@ -1,0 +1,35 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/common.scss';
+
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/about.scss';
+@import './components/cases.scss';
+@import './components/blog.scss';
+@import './components/team.scss';
+@import './components/request.scss';
+@import './components/footer.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

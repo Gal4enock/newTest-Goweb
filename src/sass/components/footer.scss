@@ -1,0 +1,39 @@
+.footer {
+  color: $white-text-color;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $black-text-color;
+   @include for-size(tablet) {
+    padding-right: 230px;
+    padding-left: 230px;
+    font-size: 18px;
+    }
+    @include for-size(desktop) {
+    padding-right: 530px;
+    padding-left: 530px;
+    }
+  &-social-links {
+    display: flex;
+    // fill: $white-text-color;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 256px;
+    justify-content: space-between;
+     @include for-size(tablet) {
+    width: 287px;
+    }
+  
+  }
+}
+  .social-link {
+    fill: $white-text-color; 
+      &:hover,
+      &:focus {
+        fill: #28a745;
+      }
+  }
