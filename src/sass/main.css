@@ -593,6 +593,7 @@ a:hover, a:focus {
   }
   .blog-details {
     width: 384px;
+    margin: 0;
   }
   .blog-box {
     margin: 0 auto;
