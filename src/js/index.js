@@ -2,6 +2,7 @@ const refs = {
   header: document.querySelector(".header"),
   form: document.querySelector(".request-box"),
   input: document.querySelector(".required"),
+  inputName:document.querySelector(".request-input-name"),
   navLink: document.querySelector(".header-nav-list")
 }
 
