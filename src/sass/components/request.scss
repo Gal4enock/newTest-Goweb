@@ -4,6 +4,7 @@
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
+    padding-bottom: 0px;
     &-box {
       width: 384px;
     }
@@ -42,6 +43,9 @@
     height: 40px;
     background-color: $white-text-color;
     border: none;
+    @include for-size(tablet) {
+      width: 324px;
+    }
      @include for-size(desktop) {
       width: 620px;
       margin: 0;
@@ -51,6 +55,9 @@
   }
   &-button {
     width: 260px;
+    @include for-size(tablet) {
+      width: 324px;
+    }
     @include for-size(desktop) {
       margin-top: 60px;
     }

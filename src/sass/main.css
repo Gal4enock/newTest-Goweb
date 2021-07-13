@@ -75,6 +75,9 @@ a:hover, a:focus {
 }
 
 .header {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 19px;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -101,6 +104,13 @@ a:hover, a:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 1360px) {
+  .header {
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
@@ -133,7 +143,6 @@ a:hover, a:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  text-decoration: underline;
 }
 
 .header-nav-list-li:not(:last-child) {
@@ -168,23 +177,21 @@ a:hover, a:focus {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  margin-top: 28px;
+  margin-top: 12px;
   position: absolute;
   top: 100%;
 }
 
 .bcg {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/mobile-hero.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/mobile-hero.jpg");
+  background-image: url("../images/optimise-images/mobile-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 320px), screen and (min-resolution: 96dpi) and (min-width: 320px), screen and (min-resolution: 1dppx) and (min-width: 320px) {
   .bcg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/mobile-hero2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/mobile-hero2x.jpg");
+    background-image: url("../images/optimise-images/mobile-hero2x.jpg");
   }
 }
 
@@ -192,15 +199,13 @@ a:hover, a:focus {
   .bcg {
     height: 1024px;
     padding-top: 407px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/tablet-hero.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/tablet-hero.jpg");
+    background-image: url("../images/optimise-images/tablet-hero.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 1dppx) and (min-width: 768px) {
   .bcg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/tablet-hero2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/tablet-hero2x.jpg");
+    background-image: url("../images/optimise-images/tablet-hero2x.jpg");
   }
 }
 
@@ -208,15 +213,13 @@ a:hover, a:focus {
   .bcg {
     height: 768px;
     padding-top: 279px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/desktop-hero.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/desktop-hero.jpg");
+    background-image: url("../images/optimise-images/desktop-hero.jpg");
   }
 }
 
 @media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-width: 1360px) and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-width: 1360px) and (min-resolution: 1dppx) and (min-width: 768px) {
   .bcg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/desktop-hero2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/desktop-hero2x.jpg");
+    background-image: url("../images/optimise-images/desktop-hero2x.jpg");
   }
 }
 
@@ -238,6 +241,12 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .hero-title {
     font-size: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 0;
   }
 }
 
@@ -283,6 +292,7 @@ a:hover, a:focus {
   color: #333333;
   font-weight: 400;
   margin: 0 auto;
+  background-color: #e5e5e5;
 }
 
 .about-bcg {
@@ -376,6 +386,7 @@ a:hover, a:focus {
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.66;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -407,11 +418,13 @@ a:hover, a:focus {
   .about-description {
     width: 384px;
     height: 564px;
+    padding-right: 36px;
   }
 }
 
 @media (min-width: 1360px) {
   .about-description {
+    padding-top: 84px;
     width: 680px;
     height: 460px;
   }
@@ -643,6 +656,7 @@ a:hover, a:focus {
 @media (min-width: 1360px) {
   .blog-details {
     width: 680px;
+    padding-top: 82px;
   }
 }
 
@@ -689,7 +703,7 @@ a:hover, a:focus {
   border: 1px solid #ffffff;
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 768px) {
   .blog-button {
     margin-left: 30px;
   }
@@ -806,7 +820,8 @@ a:hover, a:focus {
 .filter {
   width: 100%;
   height: 186px;
-  background-color: gray;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   -webkit-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
@@ -860,7 +875,9 @@ a:hover, a:focus {
 
 @media (min-width: 1360px) {
   .filter .footer-social-links {
-    width: 400px;
+    width: 270px;
+    margin-left: 70px;
+    margin-top: 23px;
   }
 }
 
@@ -885,6 +902,7 @@ a:hover, a:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 0px;
   }
   .request-box {
     width: 384px;
@@ -937,6 +955,12 @@ a:hover, a:focus {
   border: none;
 }
 
+@media (min-width: 768px) {
+  .request-input {
+    width: 324px;
+  }
+}
+
 @media (min-width: 1360px) {
   .request-input {
     width: 620px;
@@ -947,6 +971,12 @@ a:hover, a:focus {
 
 .request-button {
   width: 260px;
+}
+
+@media (min-width: 768px) {
+  .request-button {
+    width: 324px;
+  }
 }
 
 @media (min-width: 1360px) {

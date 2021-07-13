@@ -36,6 +36,7 @@
   @include for-size(desktop) {
     &-details {
       width: 680px;
+      padding-top: 82px;
     }
   }
   &-description {
@@ -70,9 +71,10 @@
   &-button {
     background-color: $blue-bg;
     border:1px solid $white-text-color;
-    @include for-size(desktop) {
+    @include for-size(tablet) {
     margin-left: 30px;
     }
+ 
     &:hover,
     &:focus {
       color: $blue-bg;

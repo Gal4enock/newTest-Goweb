@@ -2,6 +2,7 @@
   color: $black-text-color;
   font-weight: 400;
   margin: 0 auto;
+  background-color: $primary-bg;
   &-bcg {
       background-color: $green-bg;
       width: 100%;
@@ -63,6 +64,7 @@
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.66;
+    font-weight: 400;
     @include for-size(tablet) {
       font-size: 20px;
       }
@@ -83,8 +85,10 @@
     @include for-size(tablet) {
       width: 384px;
       height: 564px;
+      padding-right: 36px;
       }
     @include for-size(desktop) {
+      padding-top: 84px;
       width: 680px;
       height: 460px;
   }
