@@ -156,6 +156,23 @@ a:hover, a:focus {
   background-color: #585a5a;
 }
 
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  background-color: red;
+  border-color: red;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+  position: absolute;
+  top: 100%;
+}
+
 .bcg {
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/mobile-hero.jpg");

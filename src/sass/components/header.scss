@@ -1,3 +1,4 @@
+
 .header {
   position: absolute;
   left: 50%;
@@ -51,3 +52,18 @@
     opacity: 0.8;
     background-color: rgb(88, 90, 90);
   }
+  .current {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    background-color: red;
+    border-color: red;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    margin-top: 12px;
+    position: absolute;
+    top: 100%;
+  }
+}

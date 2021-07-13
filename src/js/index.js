@@ -1,8 +1,8 @@
 const refs = {
   header: document.querySelector(".header"),
   form: document.querySelector(".request-box"),
-  input: document.querySelector(".required")
-
+  input: document.querySelector(".required"),
+  navLink: document.querySelector(".header-nav-list")
 }
 
 window.addEventListener('scroll', function() {
@@ -41,4 +41,9 @@ refs.form.addEventListener("submit", (e) => {
     refs.input.insertAdjacentHTML("afterend", '<div class="warning-icon"><div/>')
   }
   refs.input.value = '';
+})
+
+refs.navLink.addEventListener("click", (e) => {
+  document.querySelectorAll(".header-nav-list-li .current").forEach(n => n.classList.remove('current'))
+  e.target.classList.add('current')
 })

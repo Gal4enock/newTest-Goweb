@@ -45,6 +45,9 @@
       font-size: 55px;
       }
   }
+  @include for-size(tablet) {
+      padding-top: 0;
+      }
   &-text {
     display: block;
     margin: 0 auto;
