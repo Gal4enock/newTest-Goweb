@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
         const topOffset = document.querySelector('.scrollto').offsetHeight;
         // const topOffset = 0; // если не нужен отступ сверху 
         const elementPosition = scrollTarget.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - topOffset;
+        const offsetPosition = elementPosition - topOffset - 35;
 
         window.scrollBy({
             top: offsetPosition,
