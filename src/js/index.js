@@ -42,6 +42,7 @@ refs.form.addEventListener("submit", (e) => {
     refs.input.insertAdjacentHTML("afterend", '<div class="warning-icon"><div/>')
   }
   refs.input.value = '';
+  refs.inputName.value = '';
 })
 
 refs.navLink.addEventListener("click", (e) => {
