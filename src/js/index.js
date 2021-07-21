@@ -38,8 +38,8 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 
 refs.form.addEventListener("click", (e) => {
   console.log(e);
-  e.preventDefault();
   if (refs.input.value.length < 5) {
+    e.preventDefault();
     refs.input.insertAdjacentHTML("afterend", '<div class="warning-icon"><div/>')
   }
   refs.input.value = '';
