@@ -78,11 +78,11 @@
     bottom: 75px;
     right:20px;
       @include for-size(tablet) {
-      bottom: 114px;
+      bottom: 76px;
       right:51px;
       }
       @include for-size(desktop) {
-      bottom: 229px;
+      bottom: 100px;
       right:51px;
       }
   }
@@ -95,11 +95,11 @@
     bottom: 62px;
     right:51px;
       @include for-size(tablet) {
-      bottom: 110px;
+      bottom: 63px;
       right:51px;
       }
        @include for-size(desktop) {
-      bottom: 217px;
+      bottom: 86px;
       right: 190px;
       }
   }

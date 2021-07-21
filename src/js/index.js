@@ -1,6 +1,6 @@
 const refs = {
   header: document.querySelector(".header"),
-  form: document.querySelector(".request-box"),
+  form: document.querySelector(".request-button"),
   input: document.querySelector(".required"),
   inputName:document.querySelector(".request-input-name"),
   navLink: document.querySelector(".header-nav-list")
@@ -36,7 +36,8 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
 });
 
-refs.form.addEventListener("submit", (e) => {
+refs.form.addEventListener("click", (e) => {
+  console.log(e);
   e.preventDefault();
   if (refs.input.value.length < 5) {
     refs.input.insertAdjacentHTML("afterend", '<div class="warning-icon"><div/>')
