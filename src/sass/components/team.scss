@@ -1,3 +1,6 @@
+@import '../utils/mixin';
+@import '../utils/variables';
+
 .team {
   text-align: center;
   padding-top: 50px;
@@ -81,20 +84,46 @@
     @include for-size(desktop) {
     height: 280px;
     }
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   transition: .5s ease;
   opacity: 0;
   position: absolute;
+  &-john {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/mobile-john.jpg);
+   @include for-size(tablet) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/tablet-john.jpg);
+    }
+    @include for-size(desktop) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/desktop-john.jpg);
+    }
+  }
+  &-jane{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/mobile-jane.jpg);
+   @include for-size(tablet) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/tablet-jane.jpg);
+    }
+    @include for-size(desktop) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/desktop-jane.jpg);
+    }
+  }
+  &-steve{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/mobile-steve.jpg);
+   @include for-size(tablet) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/tablet-steve.jpg);
+    }
+    @include for-size(desktop) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/desktop-steve.jpg);
+    }
+  }
 }
 
 .team-list-item:hover .member-foto {
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .team-list-item:hover .filter {
-  opacity: 0.6;
+  // opacity: 0.6;
   transform: scale(1.15);
-  box-shadow: 20px 15px 15px rgb(59, 59, 59);
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
 }
 
 .team-social-link {

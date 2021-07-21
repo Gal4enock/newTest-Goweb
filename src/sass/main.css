@@ -172,8 +172,8 @@ a:hover, a:focus {
 .current::after {
   content: "";
   display: block;
-  background-color: red;
-  border-color: red;
+  background-color: green;
+  border-color: green;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -820,10 +820,8 @@ a:hover, a:focus {
 .filter {
   width: 100%;
   height: 186px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   opacity: 0;
   position: absolute;
 }
@@ -982,6 +980,7 @@ a:hover, a:focus {
 @media (min-width: 1360px) {
   .request-button {
     margin-top: 60px;
+    width: 620px;
   }
 }
 

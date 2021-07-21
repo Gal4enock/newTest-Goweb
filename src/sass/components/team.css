@@ -1,0 +1,228 @@
+.team {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .team-description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.team-list-item {
+  position: relative;
+}
+
+@media (min-width: 1360px) {
+  .team-list-item {
+    width: 420px;
+  }
+}
+
+.team-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 35px;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 37px;
+}
+
+@media (min-width: 768px) {
+  .team-text {
+    font-size: 18px;
+  }
+}
+
+.member-name {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  .member-name {
+    font-size: 25px;
+  }
+}
+
+.member-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .member-text {
+    font-size: 18px;
+    margin-bottom: 19px;
+  }
+}
+
+.member-foto {
+  opacity: 1;
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.member-foto:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 20px 15px 15px #3b3b3b;
+          box-shadow: 20px 15px 15px #3b3b3b;
+}
+
+.filter {
+  width: 100%;
+  height: 186px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .filter {
+    height: 148px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter {
+    height: 280px;
+  }
+}
+
+.filter-john {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/mobile-john.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/mobile-john.jpg);
+}
+
+@media (min-width: 768px) {
+  .filter-john {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/tablet-john.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/tablet-john.jpg);
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter-john {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/desktop-john.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/desktop-john.jpg);
+  }
+}
+
+.filter-jane {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/mobile-jane.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/mobile-jane.jpg);
+}
+
+@media (min-width: 768px) {
+  .filter-jane {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/tablet-jane.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/tablet-jane.jpg);
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter-jane {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/desktop-jane.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/desktop-jane.jpg);
+  }
+}
+
+.filter-steve {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/mobile-steve.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/mobile-steve.jpg);
+}
+
+@media (min-width: 768px) {
+  .filter-steve {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/tablet-steve.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/tablet-steve.jpg);
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter-steve {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../src/images/desktop-steve.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../src/images/desktop-steve.jpg);
+  }
+}
+
+.team-list-item:hover .member-foto {
+  opacity: 0;
+}
+
+.team-list-item:hover .filter {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+}
+
+.team-social-link {
+  margin-top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #ffffff;
+}
+
+.team-social-link:hover, .team-social-link:focus {
+  fill-opacity: 0.8;
+}
+
+.filter .footer-social-links {
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .filter .footer-social-links {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter .footer-social-links {
+    width: 270px;
+    margin-left: 70px;
+    margin-top: 23px;
+  }
+}
+
+.filter .footer-social-links .team-social-link {
+  fill: #ffffff;
+}
+
+.filter .footer-social-links .team-social-link:hover, .filter .footer-social-links .team-social-link:focus {
+  fill-opacity: 0.8;
+}
+/*# sourceMappingURL=team.css.map */
